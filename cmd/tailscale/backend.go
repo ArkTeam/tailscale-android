@@ -188,7 +188,7 @@ func (b *backend) Start(notify func(n ipn.Notify)) error {
 	prefs.ControlURL = "http://198.23.228.158:8080"
 	return b.backend.Start(ipn.Options{
 		StateKey: "ipn-android",
-		UpdatePrefs: prefs
+		UpdatePrefs: prefs,
 	})
 }
 
